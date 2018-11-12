@@ -24,15 +24,15 @@ class PlanetCard extends React.Component {
           </div>
           <div className={classes.infoWrapper}>
             <Typography className={classes.pos}>
-              {'Population: '}
+              <span className={classes.span}>Population: </span>
               {population}
             </Typography>
             <Typography className={classes.pos}>
-              {'Climate: '}
+              <span className={classes.span}>Climate: </span>
               {climate}
             </Typography>
             <Typography className={classes.pos}>
-              {'Terreno: '}
+              <span className={classes.span}>Terreno: </span>
               {terrain}
             </Typography>
           </div>

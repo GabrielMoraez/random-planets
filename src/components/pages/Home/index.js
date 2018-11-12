@@ -47,22 +47,24 @@ class Home extends React.Component {
         climate: data.climate,
         terrain: data.terrain,
         filmsCount: data.films.length,
-      }))
-
+      }));
   }
 
   render() {
     const { classes } = this.props;
+    const {
+      name, population, climate, terrain, filmsCount,
+    } = this.state;
 
     return (
       <MainTemplate>
         <div className={classes.body}>
           <PlanetCard
-            name={this.state.name}
-            population={this.state.population}
-            climate={this.state.climate}
-            terrain={this.state.terrain}
-            filmsCount={this.state.filmsCount}
+            name={name}
+            population={population}
+            climate={climate}
+            terrain={terrain}
+            filmsCount={filmsCount}
           />
           <PrimaryButton
             text='Next'

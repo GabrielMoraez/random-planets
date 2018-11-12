@@ -11,7 +11,7 @@ const styles = () => ({
     fontSize: 40,
   },
   titleWrapper: {
-    borderBottomWidth: 1,
+    borderBottomWidth: 3,
     borderBottomStyle: 'solid',
     borderBottomcolor: 'black',
     padding: 10,
@@ -30,6 +30,9 @@ const styles = () => ({
   },
   films: {
     fontSize: 16,
+  },
+  span: {
+    fontWeight: 'bold',
   },
 });
 
