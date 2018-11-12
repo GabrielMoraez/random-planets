@@ -7,11 +7,11 @@ import styles from './styles';
 
 class PrimaryButton extends React.Component {
   render() {
-    const { text } = this.props;
+    const { text, click } = this.props;
     const { classes } = this.props;
 
     return (
-      <Button variant='contained' color='primary' className={classes.button}>
+      <Button variant='contained' color='primary' className={classes.button} onClick={click}>
         {text}
       </Button>
     );
@@ -21,6 +21,7 @@ class PrimaryButton extends React.Component {
 PrimaryButton.propTypes = {
   classes: PropTypes.object.isRequired,
   text: PropTypes.any.isRequired,
+  click: PropTypes.any.isRequired,
 };
 
 export default withStyles(styles)(PrimaryButton);

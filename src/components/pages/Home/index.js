@@ -35,6 +35,20 @@ class Home extends React.Component {
       }));
   }
 
+  handleClick = () => {
+    const id = Math.floor(Math.random() * 61);
+    const url = `https://swapi.co/api/planets/ ${id}`;
+    fetch(url)
+      .then(response => response.json())
+      .then(data => this.setState({
+        name: data.name,
+        population: data.population,
+        climate: data.climate,
+        terrain: data.terrain,
+        filmsCount: data.films.length,
+      }));
+  }
+
   render() {
     const { classes } = this.props;
 
@@ -50,6 +64,7 @@ class Home extends React.Component {
           />
           <PrimaryButton
             text='Next'
+            click={this.handleClick}
           />
         </div>
       </MainTemplate>
