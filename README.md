@@ -12,8 +12,8 @@ Live: https://randomplanets.herokuapp.com/
 $ node --version
 v8.11.4
 
-$ npm --version
-5.6.0
+$ yarn --version
+1.10.0
 
 ```
 
@@ -22,8 +22,8 @@ $ npm --version
 ```
 git clone https://github.com/GabrielMoraez/git-searcher
 cd git-searcher/
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 ## Built With
@@ -32,7 +32,7 @@ npm start
 * [React Router](https://reacttraining.com/react-router/web/guides/philosophy)
 * [Material UI](https://material-ui.com/)
 * [Atomic Design](https://docs.expo.io/versions/latest/)
-* [npm](https://www.npmjs.com/)
+* [yarn](https://yarnpkg.com/pt-BR/)
 * [ESLint](https://eslint.org/)
 * [Create React App](https://github.com/facebook/create-react-app)
 
