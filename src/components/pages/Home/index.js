@@ -36,7 +36,8 @@ class Home extends React.Component {
   }
 
   handleClick = () => {
-    const id = Math.floor(Math.random() * 61);
+    const id = Math.floor(Math.random() * (61 - 1 + 1) + 1);
+    console.log(id);
     const url = `https://swapi.co/api/planets/ ${id}`;
     fetch(url)
       .then(response => response.json())
@@ -46,7 +47,8 @@ class Home extends React.Component {
         climate: data.climate,
         terrain: data.terrain,
         filmsCount: data.films.length,
-      }));
+      }))
+
   }
 
   render() {
