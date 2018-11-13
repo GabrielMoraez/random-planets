@@ -11,6 +11,25 @@ const styles = () => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  jedi: {
+    width: 150,
+  },
+  sith: {
+    width: 150,
+  },
+  jediMove: {
+    position: 'relative',
+    left: 25,
+    bottom: 20,
+  },
+  sithMove: {
+    position: 'relative',
+    left: 25,
+    bottom: 20,
+  },
+  battleWrapper: {
+    textAlign: 'center',
+  },
 });
 
 export default styles;

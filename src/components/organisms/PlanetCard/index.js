@@ -32,7 +32,7 @@ class PlanetCard extends React.Component {
               {climate}
             </Typography>
             <Typography className={classes.pos}>
-              <span className={classes.span}>Terreno: </span>
+              <span className={classes.span}>Terrain: </span>
               {terrain}
             </Typography>
           </div>
