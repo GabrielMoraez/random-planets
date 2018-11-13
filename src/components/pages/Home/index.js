@@ -11,7 +11,11 @@ import styles from './styles';
 class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.audiourl = '//protettordelinks.com/wp-content/baixar/sabre_falarwww.toquesengracadosmp3.com.mp3';
+    this.audio = new Audio(this.audiourl);
+    this.togglePlay = this.togglePlay.bind(this);
     this.state = {
+      play: false,
       name: '',
       population: '',
       climate: '',
@@ -48,6 +52,17 @@ class Home extends React.Component {
         terrain: data.terrain,
         filmsCount: data.films.length,
       }));
+    this.togglePlay();
+  }
+
+  togglePlay() {
+    this.setState({ play: !this.state.play });
+    console.log(this.audio);
+    if (this.state.play) {
+      this.audio.play();
+    } else {
+      this.audio.pause();
+    }
   }
 
   render() {
