@@ -62,7 +62,7 @@ class Home extends React.Component {
         isFighting: !this.state.isFighting,
         isVisible: !this.state.isVisible,
       });
-    }, 100);
+    }, 200);
 
     setTimeout(() => {
       this.setState({
@@ -83,13 +83,11 @@ class Home extends React.Component {
         position: 'relative',
         left: 55,
         bottom: 20,
-        transition: { duration: 700 },
       },
       iddle: {
         position: 'relative',
         left: 0,
         bottom: 0,
-        transition: { duration: 700 },
       },
     });
 
@@ -98,13 +96,11 @@ class Home extends React.Component {
         position: 'relative',
         right: 25,
         bottom: 20,
-        transition: { duration: 700 },
       },
       iddle: {
         position: 'relative',
         right: 0,
         bottom: 0,
-        transition: { duration: 700 },
       },
     });
 
@@ -115,11 +111,9 @@ class Home extends React.Component {
         width: 50,
         right: 180,
         bottom: 30,
-        transition: { duration: 700 },
       },
       hidden: {
         display: 'none',
-        transition: { duration: 700 },
       },
     });
 
