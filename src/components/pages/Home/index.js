@@ -57,10 +57,12 @@ class Home extends React.Component {
       }));
 
     this.audio.play();
-    this.setState({
-      isFighting: !this.state.isFighting,
-      isVisible: !this.state.isVisible,
-    });
+    setTimeout(() => {
+      this.setState({
+        isFighting: !this.state.isFighting,
+        isVisible: !this.state.isVisible,
+      });
+    }, 100);
 
     setTimeout(() => {
       this.setState({
