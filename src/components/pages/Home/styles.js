@@ -30,7 +30,6 @@ const styles = () => ({
   battleWrapper: {
     textAlign: 'center',
     marginTop: 10,
-    marginLeft: 25,
   },
 });
 
