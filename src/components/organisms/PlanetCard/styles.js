@@ -1,7 +1,7 @@
 const styles = () => ({
   card: {
     textAlign: 'center',
-    width: 300,
+    width: 400,
     marginBottom: 20,
   },
   cardContent: {
